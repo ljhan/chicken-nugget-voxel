@@ -11,10 +11,14 @@
     <a-scene>
       <a-assets>
         <a-asset-item id="nug" src="chicken-nugget.bake.ply"></a-asset-item>
+        <img id="sky" src="sky-mirrored.png">
       </a-assets>
-      <a-entity ply-model="src: #nug" rotation="-90 0 0"></a-entity>
-      <a-sky color="#99ccff"></a-sky>
-      <a-entity position="0 4 12" rotation="0 0 0">
+      <a-entity ply-model="src: #nug" 
+                rotation="-90 0 0"
+                position="5 0 5"></a-entity>
+      <a-sky src="#sky"></a-sky> 
+<!--      color="#99ccff"-->
+      <a-entity position="4.9 4 18" rotation="0 0 0">
         <a-camera></a-camera>
       </a-entity>
     </a-scene>
